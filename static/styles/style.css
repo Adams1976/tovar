@@ -1,16 +1,19 @@
-*{
-  padding: 0;
-  margin: 0;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none; 
 }
 
 :root {
-  --text-color: #000;
+    --text-color: #000;
+    --background-color: #fff ;
+    --backgrond-main:#333333
 }
 
 body {
-  background-color: var(--text-color);
-  color: var(--text-color);
-  margin: 100px auto;
+    background-color: var(--text-color);
+    color: var(--text-color);
+    margin: 100px auto;
 
 }
 
@@ -18,35 +21,36 @@ body {
 /* 2 карты товаров */
 .cards {
 
-  display: flex; 
-  margin-top:220px ;
- margin: 0 auto;
-  width: 760px;
-  height: 850; 
-  gap: 50px;
+    display: flex; 
+    margin: 0 auto;
+    width: 760px;
+    height: 700px; 
+    gap: 50px;
 }
 
 .left-cards {
-  width: 340px;
-  height: 430px;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
+    width: 340px;
+    height: 315px;
+    background-color: var(--background-color);
+    text-align: center;
 }
 
 
 .top-container {
-  
-    border: 2px solid #fff;
+
+    border: 2px solid var(--background-color);
     border-top-left-radius: 10px;
-    border-top-right-radius:10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    /* background-color: #ffffff; */
-    
+
+
 }
 
 .info {
+    height: 100px;
     text-align: left;
-    padding: 10px;
+    padding-left: 30px;
+    padding-top: 50px;
 }
 
 .info>h3 {
@@ -54,43 +58,103 @@ body {
     line-height: 25px;
 }
 
-.info>p
-
-.bottom-container {
-    /* height: 100px; */
-    display: flex;
-    justify-content: space-between;
-    /* background-color: rgb(255, 255, 255); */
-    /* border: 2px solid #fff; */
-    border-top: 0;
-    border-bottom-right-radius: 10px;
+.info>p {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(0, 0, 0, 0.5);
 
 }
 
-.icon {
-    width: 100px;
-    height: 50px;
+
+
+.bottom-container {
+    background-color: var(--background-color);
+    height: 100px;
+    width: 340px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;  
+
+}
+ 
+
+
+
+.nav-icon {
+    width: 100px; 
+    height: 50px; 
     background-color: var(--text-color);
     text-align: center;
     padding-top: 20px;
     border: 2px solid var(--text-color);
     border-top-right-radius: 10px;
-} 
+    border-bottom-left-radius: 10px;
+}
 
-.right-cards {
+.price {
+    padding-right: 20px;
+   
+}
+
+.old-price {
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.new-price {
+    color: rgba(138, 23, 14, 0.897);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+/* .right-cards {
     width: 340px;
     height: 430px;
-    background-color:  rgb(230, 215, 11);
+    background-color: rgb(230, 215, 11);
     text-align: center;
 }
 
 
-.right.top-container  {
+.right.top-container {
 
     border: 2px solid rgb(230, 215, 11);
     border-top-left-radius: 10px;
-    border-top-right-radius:10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
+} */
+
+
+
+/* иконки */
+.icons {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 15px;
+    justify-content: space-between;
+    width: 760px;
+    height: 50px;
+    background-color: var(--backgrond-main);
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
 }
-    
+.main-info {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: var(--background-color);
+}
+
+.main-icons img {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+/* footer */
+
