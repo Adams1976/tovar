@@ -7,7 +7,7 @@
 :root {
     --text-color: #000;
     --background-color: #fff ;
-    --backgrond-main:#333333
+    --backgrond-main:#333333;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
     display: flex; 
     margin: 0 auto;
     width: 760px;
-    height: 700px; 
+    height: 550px; 
     gap: 50px;
 }
 
@@ -33,15 +33,17 @@ body {
     height: 315px;
     background-color: var(--background-color);
     text-align: center;
+    border: 1px solid var(--background-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
 .top-container {
-
-    border: 2px solid var(--background-color);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    height: 300px;
+   
+  
 
 
 }
@@ -59,7 +61,7 @@ body {
 }
 
 .info>p {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 15px;
     font-weight: 700;
     color:rgb(0, 0, 0, 0.5);
@@ -70,11 +72,14 @@ body {
 
 .bottom-container {
     background-color: var(--background-color);
-    height: 100px;
+    height: 90px;
     width: 340px;
-    padding-top: 40px;
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;  
+    border-right: 1px solid var(--background-color);
+    border-bottom-right-radius: 10px;
+
 
 }
  
@@ -83,18 +88,21 @@ body {
 
 .nav-icon {
     width: 100px; 
-    height: 50px; 
+    height: 68px; 
     background-color: var(--text-color);
     text-align: center;
-    padding-top: 20px;
-    border: 2px solid var(--text-color);
+    padding-top: 25px;
+    border: 1px solid black;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    
+
+ 
+  
 }
 
 .price {
     padding-right: 20px;
-   
+    
 }
 
 .old-price {
@@ -113,30 +121,31 @@ body {
 
 
 
-/* .right-cards {
+.right-cards {
     width: 340px;
-    height: 430px;
-    background-color: rgb(230, 215, 11);
+    height: 315px;
+    background-color: rgb(252, 215, 10);
     text-align: center;
-}
-
-
-.right.top-container {
-
-    border: 2px solid rgb(230, 215, 11);
+    border: 1px solid rgb(252, 215, 10);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
+   
+}
 
-} */
 
+.right.bottom-container {
+    background-color: rgb(252, 215, 10);
+    border-color: rgb(252, 215, 10);
+}
 
 
 /* иконки */
 .icons {
     display: flex;
     margin: 0 auto;
-    padding-top: 15px;
+    
+    padding-top: 15px; 
     justify-content: space-between;
     width: 760px;
     height: 50px;
@@ -146,15 +155,54 @@ body {
 }
 .main-info {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 5px;
     color: var(--background-color);
 }
 
 .main-icons img {
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 /* footer */
+
+
+.color-block-top{
+    
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 760px;
+    height: 300px;
+    color: var(--background-color);
+    background-color: var(--backgrond-main);
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+  
+}
+ 
+.color-info {
+    
+    color: #fff;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.color {
+    display: flex;
+    padding-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.color div {
+    width: 60px;
+    height: 60px;
+    border: 2px solid ;
+    border-radius: 10px;
+}
 
